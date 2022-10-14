@@ -1,21 +1,1993 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block body_class %}template-homepage{% endblock %}
+{% block body_class %}
+
+
+
+
+
+
+
+  <!doctype html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"  >
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This is Squarespace. --><!-- paddlefish-bobcat-7w96 -->
+<base href="">
+<meta charset="utf-8" />
+<title>API: Object Detection &mdash; api4ai</title>
+<link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/61bb339d051b8439ed279711/c0ca97d5-eb7a-47ff-a27f-28451f51f9ff/favicon.ico?format=100w"/>
+<link rel="canonical" href="https://api4.ai/apis/object-detection"/>
+<meta property="og:site_name" content="api4ai"/>
+<meta property="og:title" content="API: Object Detection &mdash; api4ai"/>
+<meta property="og:url" content="https://api4.ai/apis/object-detection"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="http://static1.squarespace.com/static/61bb339d051b8439ed279711/t/61bb4e267a53c24b0b529787/1639665190261/a4a-logo-vertical-dark-square-bg.png?format=1500w"/>
+<meta property="og:image:width" content="1072"/>
+<meta property="og:image:height" content="1072"/>
+<meta itemprop="name" content="API: Object Detection — api4ai"/>
+<meta itemprop="url" content="https://api4.ai/apis/object-detection"/>
+<meta itemprop="thumbnailUrl" content="http://static1.squarespace.com/static/61bb339d051b8439ed279711/t/61bb4e267a53c24b0b529787/1639665190261/a4a-logo-vertical-dark-square-bg.png?format=1500w"/>
+<link rel="image_src" href="http://static1.squarespace.com/static/61bb339d051b8439ed279711/t/61bb4e267a53c24b0b529787/1639665190261/a4a-logo-vertical-dark-square-bg.png?format=1500w" />
+<meta itemprop="image" content="http://static1.squarespace.com/static/61bb339d051b8439ed279711/t/61bb4e267a53c24b0b529787/1639665190261/a4a-logo-vertical-dark-square-bg.png?format=1500w"/>
+<meta name="twitter:title" content="API: Object Detection — api4ai"/>
+<meta name="twitter:image" content="http://static1.squarespace.com/static/61bb339d051b8439ed279711/t/61bb4e267a53c24b0b529787/1639665190261/a4a-logo-vertical-dark-square-bg.png?format=1500w"/>
+<meta name="twitter:url" content="https://api4.ai/apis/object-detection"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="description" content="" />
+<link rel="preconnect" href="https://images.squarespace-cdn.com">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300">
+<script type="text/javascript" crossorigin="anonymous" defer="defer" nomodule="nomodule" src="//assets.squarespace.com/@sqs/polyfiller/1.2.2/legacy.js"></script>
+<script type="text/javascript" crossorigin="anonymous" defer="defer" src="//assets.squarespace.com/@sqs/polyfiller/1.2.2/modern.js"></script>
+<script type="text/javascript">SQUARESPACE_ROLLUPS = {};</script>
+<script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-911b9d3770018376c308c-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_runtime');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-911b9d3770018376c308c-min.en-US.js" defer ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-98bddc81dc37f44faa7b2-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-extract_css_moment_js_vendor');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/extract-css-moment-js-vendor-98bddc81dc37f44faa7b2-min.en-US.js" defer ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-b5aec47eda85110c6c907-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-cldr_resource_pack');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-b5aec47eda85110c6c907-min.en-US.js" defer ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-a30753685e88d3c1847ad-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors_stable');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-vendors-stable-a30753685e88d3c1847ad-min.en-US.js" defer ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-vendors-5872ebffbd5a9d1290184-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common_vendors');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-vendors-5872ebffbd5a9d1290184-min.en-US.js" defer ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/common-2f319aeea0f6d83d13b6e-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/common-2f319aeea0f6d83d13b6e-min.en-US.js" defer ></script><script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//assets.squarespace.com/universal/scripts-compressed/performance-7532c45b5785b33eab5ea-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-performance');</script>
+<script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/performance-7532c45b5785b33eab5ea-min.en-US.js" defer ></script><script data-name="static-context">Static = window.Static || {}; Static.SQUARESPACE_CONTEXT = {"facebookAppId":"314192535267336","facebookApiVersion":"v6.0","rollups":{"squarespace-announcement-bar":{"js":"//assets.squarespace.com/universal/scripts-compressed/announcement-bar-dcf64e8ca0c4d41b13b10-min.en-US.js"},"squarespace-audio-player":{"css":"//assets.squarespace.com/universal/styles-compressed/audio-player-702bf18174efe0acaa8ce-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/audio-player-10685e758ebe7d7d12915-min.en-US.js"},"squarespace-blog-collection-list":{"css":"//assets.squarespace.com/universal/styles-compressed/blog-collection-list-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/blog-collection-list-b44b4108e3cadfeb3bb28-min.en-US.js"},"squarespace-calendar-block-renderer":{"css":"//assets.squarespace.com/universal/styles-compressed/calendar-block-renderer-49c4a5f3dae67a728e3f4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/calendar-block-renderer-9ef6ef3c761848645e5f8-min.en-US.js"},"squarespace-chartjs-helpers":{"css":"//assets.squarespace.com/universal/styles-compressed/chartjs-helpers-53c004ac7d4bde1c92e38-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/chartjs-helpers-f4e36688a2b42a8258dcb-min.en-US.js"},"squarespace-comments":{"css":"//assets.squarespace.com/universal/styles-compressed/comments-91e23fb14e407e3111565-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/comments-d2ff30b08a15cf8e4f062-min.en-US.js"},"squarespace-dialog":{"css":"//assets.squarespace.com/universal/styles-compressed/dialog-89b254b5c87045b9e1360-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/dialog-d64597da12cb568141d16-min.en-US.js"},"squarespace-events-collection":{"css":"//assets.squarespace.com/universal/styles-compressed/events-collection-49c4a5f3dae67a728e3f4-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/events-collection-bc579a8f3061b6cfdef86-min.en-US.js"},"squarespace-form-rendering-utils":{"js":"//assets.squarespace.com/universal/scripts-compressed/form-rendering-utils-60499883eed05b6ecc127-min.en-US.js"},"squarespace-forms":{"css":"//assets.squarespace.com/universal/styles-compressed/forms-4a16a8a8c965386db2173-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/forms-27c21cb786a5f3a61ad1d-min.en-US.js"},"squarespace-gallery-collection-list":{"css":"//assets.squarespace.com/universal/styles-compressed/gallery-collection-list-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/gallery-collection-list-a275e058377feac127abb-min.en-US.js"},"squarespace-image-zoom":{"css":"//assets.squarespace.com/universal/styles-compressed/image-zoom-8804675084a3982b022e3-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/image-zoom-7817bbf3299a0b654acc4-min.en-US.js"},"squarespace-pinterest":{"css":"//assets.squarespace.com/universal/styles-compressed/pinterest-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/pinterest-a9662d988b5133837c82f-min.en-US.js"},"squarespace-popup-overlay":{"css":"//assets.squarespace.com/universal/styles-compressed/popup-overlay-948192219c3257f767ec5-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/popup-overlay-96b256344e1152a87292a-min.en-US.js"},"squarespace-product-quick-view":{"css":"//assets.squarespace.com/universal/styles-compressed/product-quick-view-5d6c4f164c4ab5457107a-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/product-quick-view-d070a29480ad62b740ba4-min.en-US.js"},"squarespace-products-collection-item-v2":{"css":"//assets.squarespace.com/universal/styles-compressed/products-collection-item-v2-8804675084a3982b022e3-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/products-collection-item-v2-5eb9c3dcbb11d5844ba3e-min.en-US.js"},"squarespace-products-collection-list-v2":{"css":"//assets.squarespace.com/universal/styles-compressed/products-collection-list-v2-8804675084a3982b022e3-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/products-collection-list-v2-68e682b0629ed86541771-min.en-US.js"},"squarespace-search-page":{"css":"//assets.squarespace.com/universal/styles-compressed/search-page-9d0a55de1efafbb9218e1-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/search-page-f5086235d2d60baaecaeb-min.en-US.js"},"squarespace-search-preview":{"js":"//assets.squarespace.com/universal/scripts-compressed/search-preview-46e11810a59e11b7e4b49-min.en-US.js"},"squarespace-simple-liking":{"css":"//assets.squarespace.com/universal/styles-compressed/simple-liking-ef94529873378652e6e86-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/simple-liking-599ed48f406bb7fd00d1a-min.en-US.js"},"squarespace-social-buttons":{"css":"//assets.squarespace.com/universal/styles-compressed/social-buttons-1f18e025ea682ade6293a-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/social-buttons-1bbb33b7960a74025a462-min.en-US.js"},"squarespace-tourdates":{"css":"//assets.squarespace.com/universal/styles-compressed/tourdates-3d55c64c25996c7633fc2-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/tourdates-67520d5a2d1dd60226f6a-min.en-US.js"},"squarespace-website-overlays-manager":{"css":"//assets.squarespace.com/universal/styles-compressed/website-overlays-manager-7cecc648f858e6f692130-min.en-US.css","js":"//assets.squarespace.com/universal/scripts-compressed/website-overlays-manager-ab17a24482c99819822c4-min.en-US.js"}},"pageType":2,"website":{"id":"61bb339d051b8439ed279711","identifier":"paddlefish-bobcat-7w96","websiteType":1,"contentModifiedOn":1658480607204,"cloneable":false,"hasBeenCloneable":false,"siteStatus":{},"language":"en-US","timeZone":"Europe/Moscow","machineTimeZoneOffset":10800000,"timeZoneOffset":10800000,"timeZoneAbbr":"MSK","siteTitle":"api4ai","fullSiteTitle":"API: Object Detection \u2014 api4ai","siteDescription":"","location":{"addressTitle":"api4ai","addressLine1":"216-E Mt Hermon Rd.","addressLine2":"Scotts Valley, CA","addressCountry":"USA"},"logoImageId":"61bc70ca89e9d349c8ce927c","socialLogoImageId":"61bb4e267a53c24b0b529787","shareButtonOptions":{"4":true,"3":true,"8":true,"7":true,"6":true,"1":true,"2":true},"logoImageUrl":"//images.squarespace-cdn.com/content/v1/61bb339d051b8439ed279711/83d45515-2777-4f43-a9f1-2c5e087c562a/a4a-logo-vertical-transparent-bg-for-white-flat-color.png","socialLogoImageUrl":"//images.squarespace-cdn.com/content/v1/61bb339d051b8439ed279711/0799d465-8353-4f6b-81a1-91fbc18231c7/a4a-logo-vertical-dark-square-bg.png","authenticUrl":"https://api4.ai","internalUrl":"https://paddlefish-bobcat-7w96.squarespace.com","baseUrl":"https://api4.ai","primaryDomain":"api4.ai","sslSetting":3,"isHstsEnabled":true,"socialAccounts":[{"serviceId":60,"screenname":"Facebook","addedOn":1639664733910,"profileUrl":"https://www.facebook.com/Api4ai-110841724742236","iconEnabled":true,"serviceName":"facebook-unauth"},{"serviceId":64,"screenname":"Instagram","addedOn":1639658397304,"profileUrl":"https://www.instagram.com/api4ai","iconEnabled":true,"serviceName":"instagram-unauth"},{"serviceId":62,"screenname":"Twitter","addedOn":1639658397311,"profileUrl":"https://twitter.com/Api4Ai","iconEnabled":true,"serviceName":"twitter-unauth"},{"serviceId":65,"screenname":"LinkedIn","addedOn":1645085307523,"profileUrl":"https://www.linkedin.com/company/api4ai","iconEnabled":true,"serviceName":"linkedin-unauth"}],"typekitId":"","statsMigrated":false,"imageMetadataProcessingEnabled":false,"captchaSettings":{"siteKey":"","enabledForDonations":false},"showOwnerLogin":false},"websiteSettings":{"id":"61bb339d051b8439ed279714","websiteId":"61bb339d051b8439ed279711","subjects":[],"country":"RU","state":"ROS","simpleLikingEnabled":true,"mobileInfoBarSettings":{"style":3,"isContactEmailEnabled":true,"isContactPhoneNumberEnabled":false,"isLocationEnabled":false,"isBusinessHoursEnabled":false},"commentLikesAllowed":true,"commentAnonAllowed":true,"commentThreaded":true,"commentApprovalRequired":false,"commentAvatarsOn":true,"commentSortType":2,"commentFlagThreshold":0,"commentFlagsAllowed":true,"commentEnableByDefault":true,"commentDisableAfterDaysDefault":0,"disqusShortname":"","commentsEnabled":false,"contactPhoneNumber":"+14085209022","businessHours":{"monday":{"text":"","ranges":[{}]},"tuesday":{"text":"","ranges":[{}]},"wednesday":{"text":"","ranges":[{}]},"thursday":{"text":"","ranges":[{}]},"friday":{"text":"","ranges":[{}]},"saturday":{"text":"","ranges":[{}]},"sunday":{"text":"","ranges":[{}]}},"contactEmail":"hello@api.ai","storeSettings":{"returnPolicy":null,"termsOfService":null,"privacyPolicy":null,"expressCheckout":false,"continueShoppingLinkUrl":"/","useLightCart":false,"showNoteField":false,"shippingCountryDefaultValue":"US","billToShippingDefaultValue":false,"showShippingPhoneNumber":true,"isShippingPhoneRequired":false,"showBillingPhoneNumber":true,"isBillingPhoneRequired":false,"currenciesSupported":["USD","CAD","GBP","AUD","EUR","CHF","NOK","SEK","DKK","NZD","SGD","MXN","HKD","CZK","ILS","MYR","RUB","PHP","PLN","THB","BRL","ARS","COP","IDR","INR","JPY","ZAR"],"defaultCurrency":"USD","selectedCurrency":"USD","measurementStandard":1,"showCustomCheckoutForm":false,"checkoutPageMarketingOptInEnabled":true,"enableMailingListOptInByDefault":false,"sameAsRetailLocation":false,"merchandisingSettings":{"scarcityEnabledOnProductItems":false,"scarcityEnabledOnProductBlocks":false,"scarcityMessageType":"DEFAULT_SCARCITY_MESSAGE","scarcityThreshold":10,"multipleQuantityAllowedForServices":true,"restockNotificationsEnabled":false,"restockNotificationsMailingListSignUpEnabled":false,"relatedProductsEnabled":false,"relatedProductsOrdering":"random","soldOutVariantsDropdownDisabled":false,"productComposerOptedIn":false,"productComposerABTestOptedOut":false,"productReviewsEnabled":false,"displayImportedProductReviewsEnabled":false,"hasOptedToCollectNativeReviews":false},"isLive":false,"multipleQuantityAllowedForServices":true},"useEscapeKeyToLogin":false,"ssBadgeType":1,"ssBadgePosition":4,"ssBadgeVisibility":1,"ssBadgeDevices":1,"pinterestOverlayOptions":{"mode":"disabled"},"ampEnabled":false},"cookieSettings":{"isCookieBannerEnabled":true,"isRestrictiveCookiePolicyEnabled":false,"isRestrictiveCookiePolicyAbsolute":false,"cookieBannerText":"<p class=\"\" style=\"white-space:pre-wrap;\">By using this website, you agree to our use of cookies. We use cookies to provide you with great experience and to help our website run effectively.</p>","cookieBannerTheme":"DARK","cookieBannerVariant":"BAR","cookieBannerPosition":"BOTTOM","cookieBannerCtaVariant":"TEXT","cookieBannerCtaText":"Accept","cookieBannerAcceptType":"OPT_IN","cookieBannerOptOutCtaText":"Decline"},"websiteCloneable":false,"collection":{"title":"API: Object Detection","id":"61c5863fcd90480e9e7dcefa","fullUrl":"/apis/object-detection","type":10,"permissionType":1},"subscribed":false,"appDomain":"squarespace.com","templateTweakable":true,"tweakJSON":{"header-logo-height":"64px","header-mobile-logo-max-height":"48px","header-vert-padding":"3vw","header-width":"Full","maxPageWidth":"1400px","pagePadding":"4vw","tweak-blog-alternating-side-by-side-image-aspect-ratio":"1:1 Square","tweak-blog-alternating-side-by-side-image-spacing":"6%","tweak-blog-alternating-side-by-side-meta-spacing":"20px","tweak-blog-alternating-side-by-side-primary-meta":"Categories","tweak-blog-alternating-side-by-side-read-more-spacing":"20px","tweak-blog-alternating-side-by-side-secondary-meta":"Date","tweak-blog-basic-grid-columns":"2","tweak-blog-basic-grid-image-aspect-ratio":"3:2 Standard","tweak-blog-basic-grid-image-spacing":"44px","tweak-blog-basic-grid-meta-spacing":"32px","tweak-blog-basic-grid-primary-meta":"Categories","tweak-blog-basic-grid-read-more-spacing":"40px","tweak-blog-basic-grid-secondary-meta":"Date","tweak-blog-item-custom-width":"50","tweak-blog-item-show-author-profile":"true","tweak-blog-item-width":"Medium","tweak-blog-masonry-columns":"2","tweak-blog-masonry-horizontal-spacing":"30px","tweak-blog-masonry-image-spacing":"20px","tweak-blog-masonry-meta-spacing":"20px","tweak-blog-masonry-primary-meta":"Categories","tweak-blog-masonry-read-more-spacing":"20px","tweak-blog-masonry-secondary-meta":"Date","tweak-blog-masonry-vertical-spacing":"30px","tweak-blog-side-by-side-image-aspect-ratio":"1:1 Square","tweak-blog-side-by-side-image-spacing":"6%","tweak-blog-side-by-side-meta-spacing":"20px","tweak-blog-side-by-side-primary-meta":"Categories","tweak-blog-side-by-side-read-more-spacing":"20px","tweak-blog-side-by-side-secondary-meta":"Date","tweak-blog-single-column-image-spacing":"50px","tweak-blog-single-column-meta-spacing":"30px","tweak-blog-single-column-primary-meta":"Categories","tweak-blog-single-column-read-more-spacing":"30px","tweak-blog-single-column-secondary-meta":"Date","tweak-events-stacked-show-thumbnails":"true","tweak-events-stacked-thumbnail-size":"3:2 Standard","tweak-fixed-header":"false","tweak-fixed-header-style":"Basic","tweak-global-animations-animation-curve":"ease","tweak-global-animations-animation-delay":"0.1s","tweak-global-animations-animation-duration":"0.1s","tweak-global-animations-animation-style":"fade","tweak-global-animations-animation-type":"none","tweak-global-animations-complexity-level":"detailed","tweak-global-animations-enabled":"false","tweak-portfolio-grid-basic-custom-height":"50","tweak-portfolio-grid-overlay-custom-height":"50","tweak-portfolio-hover-follow-acceleration":"10%","tweak-portfolio-hover-follow-animation-duration":"Medium","tweak-portfolio-hover-follow-animation-type":"Fade","tweak-portfolio-hover-follow-delimiter":"Forward Slash","tweak-portfolio-hover-follow-front":"false","tweak-portfolio-hover-follow-layout":"Inline","tweak-portfolio-hover-follow-size":"75","tweak-portfolio-hover-follow-text-spacing-x":"1.5","tweak-portfolio-hover-follow-text-spacing-y":"1.5","tweak-portfolio-hover-static-animation-duration":"Medium","tweak-portfolio-hover-static-animation-type":"Scale Up","tweak-portfolio-hover-static-delimiter":"Forward Slash","tweak-portfolio-hover-static-front":"false","tweak-portfolio-hover-static-layout":"Stacked","tweak-portfolio-hover-static-size":"75","tweak-portfolio-hover-static-text-spacing-x":"1.5","tweak-portfolio-hover-static-text-spacing-y":"1.5","tweak-portfolio-index-background-animation-duration":"Medium","tweak-portfolio-index-background-animation-type":"Fade","tweak-portfolio-index-background-custom-height":"50","tweak-portfolio-index-background-delimiter":"None","tweak-portfolio-index-background-height":"Large","tweak-portfolio-index-background-horizontal-alignment":"Center","tweak-portfolio-index-background-link-format":"Stacked","tweak-portfolio-index-background-persist":"false","tweak-portfolio-index-background-vertical-alignment":"Middle","tweak-portfolio-index-background-width":"Full","tweak-product-basic-item-click-action":"None","tweak-product-basic-item-gallery-aspect-ratio":"1:1 Square","tweak-product-basic-item-gallery-design":"Slideshow","tweak-product-basic-item-gallery-width":"50%","tweak-product-basic-item-hover-action":"None","tweak-product-basic-item-image-spacing":"6vw","tweak-product-basic-item-image-zoom-factor":"2","tweak-product-basic-item-thumbnail-placement":"Side","tweak-product-basic-item-variant-picker-layout":"Dropdowns","tweak-products-columns":"3","tweak-products-gutter-column":"2vw","tweak-products-gutter-row":"2vw","tweak-products-header-text-alignment":"Middle","tweak-products-image-aspect-ratio":"1:1 Square","tweak-products-image-text-spacing":"2vw","tweak-products-text-alignment":"Middle","tweak-transparent-header":"true"},"templateId":"5c5a519771c10ba3470d8101","templateVersion":"7.1","pageFeatures":[1,2,4],"gmRenderKey":"QUl6YVN5Q0JUUk9xNkx1dkZfSUUxcjQ2LVQ0QWVUU1YtMGQ3bXk4","templateScriptsRootUrl":"https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/scripts/","betaFeatureFlags":["reduce_general_search_api_traffic","commerce_site_visitor_metrics","new_stacked_index","background_art_onboarding","commerce_etsy_shipping_import","supports_versioned_template_assets","member_areas_schedule_interview","fluid_engine","crm_default_newsletter_block_to_campaigns","campaigns_content_editing_survey","fluid_engine_filtered_catalog_endpoints","product_composer_feedback_form_on_save","customer_accounts_email_verification","marketing_landing_page","customer_account_creation_recaptcha","member_areas_spanish_interviews","crm_retention_segment","override_block_styles","campaigns_asset_picker","crm_use_new_import_modal_profiles","commerce_etsy_product_import","fluid_engine_block_resizing_indicator","commerce_restock_notifications","campaigns_thumbnail_layout","block_duplication","viewer-role-contributor-invites","campaigns_discount_section_in_blasts","crm_show_subscriber_import_in_profiles","themes","campaigns_global_uc_ab","send_local_pickup_ready_email","campaigns_new_subscriber_search","collection_typename_switching","scheduling_block_schema_editor","scripts_defer","commerce_clearpay","campaigns_new_image_layout_picker","nested_categories_migration_enabled","site_header_footer","fluid_engine_clean_up_grid_contextual_change","crm_remove_subscriber","asset_uploader_refactor","nested_categories","block_annotations_revamp"],"videoAssetsFeatureFlags":["hls-playback","mux-data-video-collection"],"impersonatedSession":false,"tzData":{"zones":[[180,"Russia","MSK/MSD",1301212800],[240,null,"MSK",1414310400],[180,null,"MSK",null]],"rules":{"Russia":[[1985,2010,null,"Mar","lastSun","2:00s","1:00","S"],[1996,2010,null,"Oct","lastSun","2:00s","0",null]]}},"showAnnouncementBar":false};</script><script type="application/ld+json">{"url":"https://api4.ai","name":"api4ai","description":"","image":"//images.squarespace-cdn.com/content/v1/61bb339d051b8439ed279711/83d45515-2777-4f43-a9f1-2c5e087c562a/a4a-logo-vertical-transparent-bg-for-white-flat-color.png","@context":"http://schema.org","@type":"WebSite"}</script><script type="application/ld+json">{"legalName":"api4ai","address":"216-E Mt Hermon Rd.\nScotts Valley, CA\nUSA","email":"hello@api.ai","telephone":"+14085209022","sameAs":["https://www.facebook.com/Api4ai-110841724742236","https://www.instagram.com/api4ai","https://twitter.com/Api4Ai","https://www.linkedin.com/company/api4ai"],"@context":"http://schema.org","@type":"Organization"}</script><script type="application/ld+json">{"address":"216-E Mt Hermon Rd.\nScotts Valley, CA\nUSA","image":"https://static1.squarespace.com/static/61bb339d051b8439ed279711/t/61bc70ca89e9d349c8ce927c/1658480607204/","name":"api4ai","openingHours":", , , , , , ","@context":"http://schema.org","@type":"LocalBusiness"}</script><link rel="stylesheet" type="text/css" href="https://static1.squarespace.com/static/versioned-site-css/61bb339d051b8439ed279711/191/5c5a519771c10ba3470d8101/61bb339d051b8439ed279744/1299/site.css"/><!-- Font awesome -->
+<link rel="stylesheet" href="https://www.cvisionlab.com/wp-content/themes/cvisionlab/css/fontawesome.css">
+
+
+<!-- jquery -->
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+<!-- dm uploader from cvisionlab -->
+<link rel="stylesheet" href="https://www.cvisionlab.com/wp-content/themes/cvisionlab/css/jquery.dm-uploader.min.css">
+<script src="https://www.cvisionlab.com/wp-content/themes/cvisionlab/js/jquery.dm-uploader.min.js"></script>
+
+
+<!-- api4ai client from cvisionlab -->
+<script src="https://www.cvisionlab.com/wp-content/themes/cvisionlab/js/a4a-client-id.js"></script>
+
+
+<!-- GDPR fix (to avoid overlap with re:plain widget) -->
+<style>
+.sqs-cookie-banner-v2 {
+  justify-content: left !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+</style>
+
+
+<!-- Re:plain -->
+<script>
+window.replainSettings = { id: '0345c697-e9f8-47b3-ae84-839a763fab14' };
+(function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
+var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+})('https://widget.replain.cc/dist/client.js');
+</script>
+
+
+<!-- LeadRebel start -->
+<script>
+    (function(d, w, b, t){
+        var h = d.getElementsByTagName("head")[0];
+        var s = d.createElement("script");
+        s.src = b + "/t/script.js?c=" + t;
+        h.appendChild(s);
+    })(document, window, "https://app.leadrebel.io", "62592cb0529d656c68471ba3");
+</script>
+<noscript><img src="https://app.leadrebel.io/t/img?c=62592cb0529d656c68471ba3" style="visibility:hidden;" alt="LR pixel"/></noscript><style>
+header#header {
+  background-color: #ffffff50 !important;
+}
+</style>
+
+
+
+
+
+</script><script>Static.COOKIE_BANNER_CAPABLE = true;</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=$GA_TRACKING_ID$"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZjQwMz', true);gtag('config', 'UA-50234379-4');</script><script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.agent='plsquarespace';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '471283217811281');fbq('track', "PageView");</script><!-- End of Squarespace Headers -->
+    
+      <script>
+        window.__INITIAL_SQUARESPACE_7_1_SITE_PALETTE__ = [{"id":"white","value":"hsl(0,100%,100%)"},{"id":"black","value":"hsl(0,100%,0%)"},{"id":"accent","value":"#F0BE00"},{"id":"lightAccent","value":"hsl(270, 4%, 92%)"},{"id":"darkAccent","value":"hsl(28, 5%, 38%)"}];
+      </script>
+    
+
+    
+      
+      <style id="colorThemeStyles">
+
+      
+    </style>
+  </head>
+
+
+
+
+  <body
+    id="collection-61c5863fcd90480e9e7dcefa"
+    class="
+      header-overlay-alignment-center header-width-full tweak-transparent-header  tweak-fixed-header-style-basic tweak-blog-alternating-side-by-side-width-full tweak-blog-alternating-side-by-side-image-aspect-ratio-11-square tweak-blog-alternating-side-by-side-text-alignment-left tweak-blog-alternating-side-by-side-read-more-style-show tweak-blog-alternating-side-by-side-image-text-alignment-middle tweak-blog-alternating-side-by-side-delimiter-bullet tweak-blog-alternating-side-by-side-meta-position-top tweak-blog-alternating-side-by-side-primary-meta-categories tweak-blog-alternating-side-by-side-secondary-meta-date tweak-blog-alternating-side-by-side-excerpt-show tweak-blog-basic-grid-width-inset tweak-blog-basic-grid-image-aspect-ratio-32-standard tweak-blog-basic-grid-text-alignment-left tweak-blog-basic-grid-delimiter-bullet tweak-blog-basic-grid-image-placement-above tweak-blog-basic-grid-read-more-style-show tweak-blog-basic-grid-primary-meta-categories tweak-blog-basic-grid-secondary-meta-date tweak-blog-basic-grid-excerpt-show tweak-blog-item-width-medium tweak-blog-item-text-alignment-left tweak-blog-item-meta-position-above-title tweak-blog-item-show-categories tweak-blog-item-show-date tweak-blog-item-show-author-name tweak-blog-item-show-author-profile tweak-blog-item-delimiter-bullet tweak-blog-masonry-width-full tweak-blog-masonry-text-alignment-left tweak-blog-masonry-primary-meta-categories tweak-blog-masonry-secondary-meta-date tweak-blog-masonry-meta-position-top tweak-blog-masonry-read-more-style-show tweak-blog-masonry-delimiter-space tweak-blog-masonry-image-placement-above tweak-blog-masonry-excerpt-show tweak-blog-side-by-side-width-full tweak-blog-side-by-side-image-placement-left tweak-blog-side-by-side-image-aspect-ratio-11-square tweak-blog-side-by-side-primary-meta-categories tweak-blog-side-by-side-secondary-meta-date tweak-blog-side-by-side-meta-position-top tweak-blog-side-by-side-text-alignment-left tweak-blog-side-by-side-image-text-alignment-middle tweak-blog-side-by-side-read-more-style-show tweak-blog-side-by-side-delimiter-bullet tweak-blog-side-by-side-excerpt-show tweak-blog-single-column-width-full tweak-blog-single-column-text-alignment-center tweak-blog-single-column-image-placement-above tweak-blog-single-column-delimiter-bullet tweak-blog-single-column-read-more-style-show tweak-blog-single-column-primary-meta-categories tweak-blog-single-column-secondary-meta-date tweak-blog-single-column-meta-position-top tweak-blog-single-column-content-full-post tweak-events-stacked-width-full tweak-events-stacked-height-large  tweak-events-stacked-show-thumbnails tweak-events-stacked-thumbnail-size-32-standard tweak-events-stacked-date-style-with-text tweak-events-stacked-show-time tweak-events-stacked-show-location  tweak-events-stacked-show-excerpt   tweak-global-animations-complexity-level-detailed tweak-global-animations-animation-style-fade tweak-global-animations-animation-type-none tweak-global-animations-animation-curve-ease tweak-portfolio-grid-basic-width-full tweak-portfolio-grid-basic-height-large tweak-portfolio-grid-basic-image-aspect-ratio-11-square tweak-portfolio-grid-basic-text-alignment-left tweak-portfolio-grid-basic-hover-effect-fade tweak-portfolio-grid-overlay-width-full tweak-portfolio-grid-overlay-height-large tweak-portfolio-grid-overlay-image-aspect-ratio-11-square tweak-portfolio-grid-overlay-text-placement-center tweak-portfolio-grid-overlay-show-text-after-hover tweak-portfolio-index-background-link-format-stacked tweak-portfolio-index-background-width-full tweak-portfolio-index-background-height-large  tweak-portfolio-index-background-vertical-alignment-middle tweak-portfolio-index-background-horizontal-alignment-center tweak-portfolio-index-background-delimiter-none tweak-portfolio-index-background-animation-type-fade tweak-portfolio-index-background-animation-duration-medium tweak-portfolio-hover-follow-layout-inline  tweak-portfolio-hover-follow-delimiter-forward-slash tweak-portfolio-hover-follow-animation-type-fade tweak-portfolio-hover-follow-animation-duration-medium tweak-portfolio-hover-static-layout-stacked  tweak-portfolio-hover-static-delimiter-forward-slash tweak-portfolio-hover-static-animation-type-scale-up tweak-portfolio-hover-static-animation-duration-medium tweak-product-basic-item-width-inset tweak-product-basic-item-gallery-aspect-ratio-11-square tweak-product-basic-item-text-alignment-center tweak-product-basic-item-navigation-breadcrumbs tweak-product-basic-item-content-alignment-top tweak-product-basic-item-gallery-design-slideshow tweak-product-basic-item-gallery-placement-left tweak-product-basic-item-thumbnail-placement-side tweak-product-basic-item-click-action-none tweak-product-basic-item-hover-action-none tweak-product-basic-item-variant-picker-layout-dropdowns tweak-products-width-inset tweak-products-image-aspect-ratio-11-square tweak-products-text-alignment-middle tweak-products-price-show tweak-products-nested-category-type-top tweak-products-category-title tweak-products-header-text-alignment-middle tweak-products-breadcrumbs primary-button-style-solid primary-button-shape-rounded secondary-button-style-solid secondary-button-shape-rounded tertiary-button-style-solid tertiary-button-shape-rounded image-block-poster-text-alignment-left image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-content-position-center image-block-collage-text-alignment-left image-block-stack-text-alignment-left hide-opentable-icons opentable-style-dark tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light native-currency-code-usd collection-type-page collection-layout-default collection-61c5863fcd90480e9e7dcefa mobile-style-available sqs-seven-one
+      
+        
+          
+            
+              
+            
+          
+        
+      
+    "
+    tabindex="-1"
+  >
+    <div
+      id="siteWrapper"
+      class="clearfix site-wrapper"
+    >
+      
+        <div id="floatingCart" class="floating-cart hidden">
+          <a href="/cart" class="icon icon--stroke icon--fill icon--cart sqs-custom-cart">
+            <span class="Cart-inner">
+              
+
+
+
+  <svg class="icon icon--cart" viewBox="0 0 31 24">
+  <g class="svg-icon cart-icon--odd">
+    <circle fill="none" stroke-miterlimit="10" cx="22.5" cy="21.5" r="1"/>
+    <circle fill="none" stroke-miterlimit="10" cx="9.5" cy="21.5" r="1"/>
+    <path fill="none" stroke-miterlimit="10" d="M0,1.5h5c0.6,0,1.1,0.4,1.1,1l1.7,13
+      c0.1,0.5,0.6,1,1.1,1h15c0.5,0,1.2-0.4,1.4-0.9l3.3-8.1c0.2-0.5-0.1-0.9-0.6-0.9H12"/>
+  </g>
+</svg>
+
+              <div class="legacy-cart icon-cart-quantity">
+                <span class="sqs-cart-quantity">0</span>
+              </div>
+            </span>
+          </a>
+        </div>
+      
+
+      
+
+
+
+
+
+
+
+
+
+<header
+  data-test="header"
+  id="header"
+  
+  class="
+    
+      
+        
+      
+    
+    header theme-col--primary
+  "
+  data-controller="Header"
+  data-current-styles="{
+&quot;layout&quot;: &quot;navRight&quot;,
+&quot;action&quot;: {
+&quot;href&quot;: &quot;/get-started&quot;,
+&quot;buttonText&quot;: &quot;Get Started&quot;,
+&quot;newWindow&quot;: false
+},
+&quot;showSocial&quot;: false,
+&quot;sectionTheme&quot;: &quot;bright&quot;,
+&quot;menuOverlayAnimation&quot;: &quot;fade&quot;,
+&quot;cartStyle&quot;: &quot;cart&quot;,
+&quot;cartText&quot;: &quot;Cart&quot;,
+&quot;showEmptyCartState&quot;: true,
+&quot;cartOptions&quot;: {
+&quot;iconType&quot;: &quot;stroke-1&quot;,
+&quot;cartBorderShape&quot;: &quot;none&quot;,
+&quot;cartBorderStyle&quot;: &quot;outline&quot;,
+&quot;cartBorderThickness&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 1.0
+}
+},
+&quot;showButton&quot;: true,
+&quot;showCart&quot;: false,
+&quot;showAccountLogin&quot;: true,
+&quot;headerStyle&quot;: &quot;dynamic&quot;,
+&quot;languagePicker&quot;: {
+&quot;enabled&quot;: false,
+&quot;iconEnabled&quot;: false,
+&quot;iconType&quot;: &quot;globe&quot;,
+&quot;flagShape&quot;: &quot;shiny&quot;,
+&quot;languageFlags&quot;: [ ]
+},
+&quot;mobileOptions&quot;: {
+&quot;layout&quot;: &quot;logoLeftNavRight&quot;,
+&quot;menuIcon&quot;: &quot;doubleLineHamburger&quot;,
+&quot;menuIconOptions&quot;: {
+&quot;style&quot;: &quot;doubleLineHamburger&quot;,
+&quot;thickness&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 1.0
+}
+}
+},
+&quot;dynamicOptions&quot;: {
+&quot;border&quot;: {
+&quot;enabled&quot;: false,
+&quot;position&quot;: &quot;allSides&quot;,
+&quot;thickness&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 4.0
+}
+}
+},
+&quot;solidOptions&quot;: {
+&quot;headerOpacity&quot;: {
+&quot;unit&quot;: &quot;%&quot;,
+&quot;value&quot;: 100.0
+},
+&quot;border&quot;: {
+&quot;enabled&quot;: false,
+&quot;position&quot;: &quot;allSides&quot;,
+&quot;thickness&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 4.0
+}
+},
+&quot;dropShadow&quot;: {
+&quot;enabled&quot;: false,
+&quot;blur&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 127.0
+},
+&quot;spread&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 5.0
+},
+&quot;distance&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 25.0
+}
+},
+&quot;blurBackground&quot;: {
+&quot;enabled&quot;: false,
+&quot;blurRadius&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 12.0
+}
+}
+},
+&quot;gradientOptions&quot;: {
+&quot;gradientType&quot;: &quot;faded&quot;,
+&quot;headerOpacity&quot;: {
+&quot;unit&quot;: &quot;%&quot;,
+&quot;value&quot;: 100.0
+},
+&quot;border&quot;: {
+&quot;enabled&quot;: false,
+&quot;position&quot;: &quot;allSides&quot;,
+&quot;thickness&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 4.0
+}
+},
+&quot;dropShadow&quot;: {
+&quot;enabled&quot;: false,
+&quot;blur&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 30.0
+},
+&quot;spread&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 0.0
+},
+&quot;distance&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 0.0
+}
+},
+&quot;blurBackground&quot;: {
+&quot;enabled&quot;: false,
+&quot;blurRadius&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 12.0
+}
+}
+},
+&quot;showPromotedElement&quot;: false
+}"
+  data-section-id="header"
+  data-header-theme="bright"
+  data-menu-overlay-theme=""
+  data-header-style="dynamic"
+  data-language-picker="{
+&quot;enabled&quot;: false,
+&quot;iconEnabled&quot;: false,
+&quot;iconType&quot;: &quot;globe&quot;,
+&quot;flagShape&quot;: &quot;shiny&quot;,
+&quot;languageFlags&quot;: [ ]
+}"
+  
+  data-first-focusable-element
+  tabindex="-1"
+>
+  
+<div class="sqs-announcement-bar-dropzone"></div>
+
+  <div class="header-announcement-bar-wrapper"
+  > 
+
+    <a
+      href="#page"
+      
+      tabindex="1"
+      class="header-skip-link sqs-button-element--primary"
+    >
+      Skip to Content
+    </a>
+  
+
+
+<style>
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        .header-blur-background {
+            
+            
+        }
+    }
+</style>
+    <div
+      class="header-border"
+      data-header-style="dynamic"
+      data-test="header-border"
+      style="
+
+
+
+
+
+
+  
+    border-width: 0px !important;
+  
+
+
+
+"
+    ></div>
+    <div
+      class="header-dropshadow"
+      data-header-style="dynamic"
+      data-test="header-dropshadow"
+      style="
+
+"
+    ></div>
+    
+    
+
+    <div class='header-inner container--fluid
+      
+      
+      
+       header-mobile-layout-logo-left-nav-right
+      
+      
+      
+      
+      
+      
+       header-layout-nav-right
+      
+      
+      
+      
+      
+      
+      
+      
+      '
+      style="
+
+
+
+
+
+
+  
+    padding: 0;
+  
+
+
+
+"
+      data-test="header-inner"
+      >
+      <!-- Background -->
+      <div class="header-background theme-bg--primary"></div>
+
+      <div class="header-display-desktop" data-content-field="site-title">
+        
+
+        
+
+        
+
+        
+        
+          
+          <!-- Social -->
+          
+        
+          
+          <!-- Title and nav wrapper -->
+          <div class="header-title-nav-wrapper">
+            
+
+            
+
+            
+              
+              <!-- Title -->
+              
+                <div
+                  class="
+                    header-title
+                    
+                  "
+                  data-animation-role="header-element"
+                >
+                  
+                    <div class="header-title-logo">
+                      <a href="/" data-animation-role="header-element">
+                      
+
+
+
+
+
+
+
+{% comment %} Headernour logo {% endcomment %}
+
+  
+  <img src="https://www.alse.fr/sites/alse.fr/local/cache-vignettes/L400xH350/deeplearning-fbdab.jpg?1573310057"
+  
+    
+" alt="api4ai">
+
+
+                      </a>
+                    </div>
+
+                  
+                  
+                </div>
+              
+            
+              
+              <!-- Nav -->
+              <div class="header-nav">
+                <div class="header-nav-wrapper">
+                  <nav class="header-nav-list">
+                    
+
+
+  
+    <div class="header-nav-item header-nav-item--collection header-nav-item--homepage">
+      <a
+        href="/"
+        data-animation-role="header-element"
+        
+      >
+        Home
+      </a>
+    </div>
+  
+  
+  
+
+
+  
+    <div class="header-nav-item header-nav-item--collection">
+      <a
+        href="/apis"
+        data-animation-role="header-element"
+        
+      >
+        Products
+      </a>
+    </div>
+  
+  
+  
+
+
+  
+    <div class="header-nav-item header-nav-item--collection">
+      <a
+        href="/service"
+        data-animation-role="header-element"
+        
+      >
+        Service
+      </a>
+    </div>
+  
+  
+  
+
+
+  
+    <div class="header-nav-item header-nav-item--collection">
+      <a
+        href="/docs/intro"
+        data-animation-role="header-element"
+        
+      >
+        Docs
+      </a>
+    </div>
+  
+  
+  
+
+
+  
+    <div class="header-nav-item header-nav-item--collection">
+      <a
+        href="/company"
+        data-animation-role="header-element"
+        
+      >
+        Company
+      </a>
+    </div>
+  
+  
+  
+
+
+  
+    <div class="header-nav-item header-nav-item--collection">
+      <a
+        href="/contacts"
+        data-animation-role="header-element"
+        
+      >
+        Contacts
+      </a>
+    </div>
+  
+  
+  
+
+
+
+                  </nav>
+                </div>
+              </div>
+            
+            
+          </div>
+        
+          
+          <!-- Actions -->
+          <div class="header-actions header-actions--right">
+            
+            
+
+            
+
+          
+          
+
+            
+            <div class="showOnMobile">
+              
+            </div>
+
+            
+            <div class="showOnDesktop">
+              
+            </div>
+
+            
+              <div class="header-actions-action header-actions-action--cta" data-animation-role="header-element">
+                <a
+                  class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary"
+                  href="/get-started"
+                  
+                >
+                  Get Started
+                </a>
+              </div>
+            
+          </div>
+        
+          
+
+
+<style>
+  .top-bun, 
+  .patty, 
+  .bottom-bun {
+    height: 1px;
+  }
+</style>
+
+<!-- Burger -->
+<div class="header-burger
+
+  menu-overlay-has-visible-non-navigation-items
+
+
+  
+" data-animation-role="header-element">
+  <button class="header-burger-btn burger" data-test="header-burger">
+    <span hidden class="js-header-burger-open-title visually-hidden">Open Menu</span>
+    <span hidden class="js-header-burger-close-title visually-hidden">Close Menu</span>
+    <div class="burger-box">
+      <div class="burger-inner header-menu-icon-doubleLineHamburger">
+        <div class="top-bun"></div>
+        <div class="patty"></div>
+        <div class="bottom-bun"></div>
+      </div>
+    </div>
+  </button>
+</div>
+
+        
+        
+        
+        
+        
+
+      </div>
+      <div class="header-display-mobile" data-content-field="site-title">
+        
+          
+          <!-- Social -->
+          
+        
+          
+          <!-- Title and nav wrapper -->
+          <div class="header-title-nav-wrapper">
+            
+
+            
+
+            
+              
+              <!-- Title -->
+              
+                <div
+                  class="
+                    header-title
+                    
+                  "
+                  data-animation-role="header-element"
+                >
+                  
+                    <div class="header-title-logo">
+                      <a href="/" data-animation-role="header-element">
+                      
+
+
+
+
+
+
+
+
+
+  
+  <img src="
+  
+    //images.squarespace-cdn.com/content/v1/61bb339d051b8439ed279711/83d45515-2777-4f43-a9f1-2c5e087c562a/a4a-logo-vertical-transparent-bg-for-white-flat-color.png?format=1500w
+  
+" alt="api4ai">
+
+
+                      </a>
+                    </div>
+
+                  
+                  
+                </div>
+              
+            
+              
+              <!-- Nav -->
+              <div class="header-nav">
+                <div class="header-nav-wrapper">
+                  <nav class="header-nav-list">
+                    
+
+
+  
+    <div class="header-nav-item header-nav-item--collection header-nav-item--homepage">
+      <a
+        href="/"
+        data-animation-role="header-element"
+        
+      >
+        Home
+      </a>
+    </div>
+  
+  
+  
+
+
+  
+    <div class="header-nav-item header-nav-item--collection">
+      <a
+        href="/apis"
+        data-animation-role="header-element"
+        
+      >
+        Products
+      </a>
+    </div>
+  
+  
+  
+
+
+  
+    <div class="header-nav-item header-nav-item--collection">
+      <a
+        href="/service"
+        data-animation-role="header-element"
+        
+      >
+        Service
+      </a>
+    </div>
+  
+  
+  
+
+
+  
+    <div class="header-nav-item header-nav-item--collection">
+      <a
+        href="/docs/intro"
+        data-animation-role="header-element"
+        
+      >
+        Docs
+      </a>
+    </div>
+  
+  
+  
+
+
+  
+    <div class="header-nav-item header-nav-item--collection">
+      <a
+        href="/company"
+        data-animation-role="header-element"
+        
+      >
+        Company
+      </a>
+    </div>
+  
+  
+  
+
+
+  
+    <div class="header-nav-item header-nav-item--collection">
+      <a
+        href="/contacts"
+        data-animation-role="header-element"
+        
+      >
+        Contacts
+      </a>
+    </div>
+  
+  
+  
+
+
+
+                  </nav>
+                </div>
+              </div>
+            
+            
+          </div>
+        
+          
+          <!-- Actions -->
+          <div class="header-actions header-actions--right">
+            
+            
+
+            
+
+          
+          
+
+            
+            <div class="showOnMobile">
+              
+            </div>
+
+            
+            <div class="showOnDesktop">
+              
+            </div>
+
+            
+              <div class="header-actions-action header-actions-action--cta" data-animation-role="header-element">
+                <a
+                  class="btn btn--border theme-btn--primary-inverse sqs-button-element--primary"
+                  href="/get-started"
+                  
+                >
+                  Get Started
+                </a>
+              </div>
+            
+          </div>
+        
+          
+
+
+<style>
+  .top-bun, 
+  .patty, 
+  .bottom-bun {
+    height: 1px;
+  }
+</style>
+
+<!-- Burger -->
+<div class="header-burger
+
+  menu-overlay-has-visible-non-navigation-items
+
+
+  
+" data-animation-role="header-element">
+  <button class="header-burger-btn burger" data-test="header-burger">
+    <span hidden class="js-header-burger-open-title visually-hidden">Open Menu</span>
+    <span hidden class="js-header-burger-close-title visually-hidden">Close Menu</span>
+    <div class="burger-box">
+      <div class="burger-inner header-menu-icon-doubleLineHamburger">
+        <div class="top-bun"></div>
+        <div class="patty"></div>
+        <div class="bottom-bun"></div>
+      </div>
+    </div>
+  </button>
+</div>
+
+        
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  <!-- (Mobile) Menu Navigation -->
+  <div class="header-menu header-menu--folder-list
+    
+    
+    
+    
+    
+    "
+    data-current-styles="{
+&quot;layout&quot;: &quot;navRight&quot;,
+&quot;action&quot;: {
+&quot;href&quot;: &quot;/get-started&quot;,
+&quot;buttonText&quot;: &quot;Get Started&quot;,
+&quot;newWindow&quot;: false
+},
+&quot;showSocial&quot;: false,
+&quot;sectionTheme&quot;: &quot;bright&quot;,
+&quot;menuOverlayAnimation&quot;: &quot;fade&quot;,
+&quot;cartStyle&quot;: &quot;cart&quot;,
+&quot;cartText&quot;: &quot;Cart&quot;,
+&quot;showEmptyCartState&quot;: true,
+&quot;cartOptions&quot;: {
+&quot;iconType&quot;: &quot;stroke-1&quot;,
+&quot;cartBorderShape&quot;: &quot;none&quot;,
+&quot;cartBorderStyle&quot;: &quot;outline&quot;,
+&quot;cartBorderThickness&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 1.0
+}
+},
+&quot;showButton&quot;: true,
+&quot;showCart&quot;: false,
+&quot;showAccountLogin&quot;: true,
+&quot;headerStyle&quot;: &quot;dynamic&quot;,
+&quot;languagePicker&quot;: {
+&quot;enabled&quot;: false,
+&quot;iconEnabled&quot;: false,
+&quot;iconType&quot;: &quot;globe&quot;,
+&quot;flagShape&quot;: &quot;shiny&quot;,
+&quot;languageFlags&quot;: [ ]
+},
+&quot;mobileOptions&quot;: {
+&quot;layout&quot;: &quot;logoLeftNavRight&quot;,
+&quot;menuIcon&quot;: &quot;doubleLineHamburger&quot;,
+&quot;menuIconOptions&quot;: {
+&quot;style&quot;: &quot;doubleLineHamburger&quot;,
+&quot;thickness&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 1.0
+}
+}
+},
+&quot;dynamicOptions&quot;: {
+&quot;border&quot;: {
+&quot;enabled&quot;: false,
+&quot;position&quot;: &quot;allSides&quot;,
+&quot;thickness&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 4.0
+}
+}
+},
+&quot;solidOptions&quot;: {
+&quot;headerOpacity&quot;: {
+&quot;unit&quot;: &quot;%&quot;,
+&quot;value&quot;: 100.0
+},
+&quot;border&quot;: {
+&quot;enabled&quot;: false,
+&quot;position&quot;: &quot;allSides&quot;,
+&quot;thickness&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 4.0
+}
+},
+&quot;dropShadow&quot;: {
+&quot;enabled&quot;: false,
+&quot;blur&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 127.0
+},
+&quot;spread&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 5.0
+},
+&quot;distance&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 25.0
+}
+},
+&quot;blurBackground&quot;: {
+&quot;enabled&quot;: false,
+&quot;blurRadius&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 12.0
+}
+}
+},
+&quot;gradientOptions&quot;: {
+&quot;gradientType&quot;: &quot;faded&quot;,
+&quot;headerOpacity&quot;: {
+&quot;unit&quot;: &quot;%&quot;,
+&quot;value&quot;: 100.0
+},
+&quot;border&quot;: {
+&quot;enabled&quot;: false,
+&quot;position&quot;: &quot;allSides&quot;,
+&quot;thickness&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 4.0
+}
+},
+&quot;dropShadow&quot;: {
+&quot;enabled&quot;: false,
+&quot;blur&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 30.0
+},
+&quot;spread&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 0.0
+},
+&quot;distance&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 0.0
+}
+},
+&quot;blurBackground&quot;: {
+&quot;enabled&quot;: false,
+&quot;blurRadius&quot;: {
+&quot;unit&quot;: &quot;px&quot;,
+&quot;value&quot;: 12.0
+}
+}
+},
+&quot;showPromotedElement&quot;: false
+}"
+    data-section-id="overlay-nav"
+    data-show-account-login="true"
+    data-test="header-menu">
+    <div class="header-menu-bg theme-bg--primary"></div>
+    <div class="header-menu-nav">
+      <nav class="header-menu-nav-list">
+        <div data-folder="root" class="header-menu-nav-folder">
+          <!-- Menu Navigation -->
+<div class="header-menu-nav-folder-content">
+
+  <div class="container header-menu-nav-item header-menu-nav-item--collection header-menu-nav-item--homepage">
+    <a
+      href="/"
+      
+    >
+      <div class="header-menu-nav-item-content">
+        Home
+      </div>
+    </a>
+  </div>
+
+  <div class="container header-menu-nav-item header-menu-nav-item--collection">
+    <a
+      href="/apis"
+      
+    >
+      <div class="header-menu-nav-item-content">
+        Products
+      </div>
+    </a>
+  </div>
+
+  <div class="container header-menu-nav-item header-menu-nav-item--collection">
+    <a
+      href="/service"
+      
+    >
+      <div class="header-menu-nav-item-content">
+        Service
+      </div>
+    </a>
+  </div>
+
+  <div class="container header-menu-nav-item header-menu-nav-item--collection">
+    <a
+      href="/docs/intro"
+      
+    >
+      <div class="header-menu-nav-item-content">
+        Docs
+      </div>
+    </a>
+  </div>
+
+  <div class="container header-menu-nav-item header-menu-nav-item--collection">
+    <a
+      href="/company"
+      
+    >
+      <div class="header-menu-nav-item-content">
+        Company
+      </div>
+    </a>
+  </div>
+
+  <div class="container header-menu-nav-item header-menu-nav-item--collection">
+    <a
+      href="/contacts"
+      
+    >
+      <div class="header-menu-nav-item-content">
+        Contacts
+      </div>
+    </a>
+  </div>
+
+
+</div>
+
+          <div class="header-menu-actions"></div>
+          
+          
+          <div class="header-menu-cta">
+            <a
+              class="theme-btn--primary btn sqs-button-element--primary"
+              href="/get-started"
+              
+            >
+              Get Started
+            </a>
+          </div>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+      <main id="page" class="container" role="main">
+        
+          <article class="sections" data-page-sections="61c5863fcd90480e9e7dcef9" id="sections">
+  
+    
+
+<section
+  data-test="page-section"
+  
+  data-section-theme=""
+  class='page-section
+    
+      layout-engine-section
+    
+    background-width--full-bleed
+    
+      section-height--medium
+    
+    
+      content-width--wide
+    
+    horizontal-alignment--center
+    vertical-alignment--middle
+    
+       has-background
+    
+    
+    '
+  
+  data-section-id="61c5863fcd90480e9e7dcefc"
+  
+  data-controller="SectionWrapperController"
+  data-current-styles="{
+&quot;backgroundImage&quot;: {
+&quot;id&quot;: &quot;61cb07cf5027dd0bbb8bb2ff&quot;,
+&quot;recordType&quot;: 2,
+&quot;addedOn&quot;: 1640695759016,
+&quot;updatedOn&quot;: 1648044906105,
+&quot;workflowState&quot;: 1,
+&quot;publishOn&quot;: 1640695759016,
+&quot;authorId&quot;: &quot;601be798b4d0276a4f26cc28&quot;,
+&quot;systemDataId&quot;: &quot;793cf1ba-2f6b-4f3e-b933-e68fc6a79ff5&quot;,
+&quot;systemDataVariants&quot;: &quot;3000x1709,100w,300w,500w,750w,1000w,1500w,2500w&quot;,
+&quot;systemDataSourceType&quot;: &quot;PNG&quot;,
+&quot;filename&quot;: &quot;header.png&quot;,
+&quot;mediaFocalPoint&quot;: {
+&quot;x&quot;: 0.6254364089775561,
+&quot;y&quot;: 0.7360920115014377,
+&quot;source&quot;: 3
+},
+&quot;colorData&quot;: {
+&quot;topLeftAverage&quot;: &quot;989794&quot;,
+&quot;topRightAverage&quot;: &quot;9f9f9c&quot;,
+&quot;bottomLeftAverage&quot;: &quot;8e8479&quot;,
+&quot;bottomRightAverage&quot;: &quot;8f857a&quot;,
+&quot;centerAverage&quot;: &quot;bcbbb9&quot;,
+&quot;suggestedBgColor&quot;: &quot;93908d&quot;
+},
+&quot;urlId&quot;: &quot;79f93un8ozriofdt9mr8dxwr6id4it&quot;,
+&quot;title&quot;: &quot;&quot;,
+&quot;body&quot;: null,
+&quot;likeCount&quot;: 0,
+&quot;commentCount&quot;: 0,
+&quot;publicCommentCount&quot;: 0,
+&quot;commentState&quot;: 2,
+&quot;unsaved&quot;: false,
+&quot;author&quot;: {
+&quot;id&quot;: &quot;601be798b4d0276a4f26cc28&quot;,
+&quot;displayName&quot;: &quot;CVision Laboratory&quot;,
+&quot;firstName&quot;: &quot;CVision&quot;,
+&quot;lastName&quot;: &quot;Laboratory&quot;,
+&quot;bio&quot;: &quot;&quot;
+},
+&quot;assetUrl&quot;: &quot;https://images.squarespace-cdn.com/content/v1/61bb339d051b8439ed279711/793cf1ba-2f6b-4f3e-b933-e68fc6a79ff5/header.png&quot;,
+&quot;contentType&quot;: &quot;image/png&quot;,
+&quot;items&quot;: [ ],
+&quot;pushedServices&quot;: { },
+&quot;pendingPushedServices&quot;: { },
+&quot;recordTypeLabel&quot;: &quot;image&quot;,
+&quot;originalSize&quot;: &quot;3000x1709&quot;
+},
+&quot;imageOverlayOpacity&quot;: 0.0,
+&quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
+&quot;sectionHeight&quot;: &quot;section-height--medium&quot;,
+&quot;customSectionHeight&quot;: 10,
+&quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
+&quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
+&quot;contentWidth&quot;: &quot;content-width--wide&quot;,
+&quot;customContentWidth&quot;: 50,
+&quot;backgroundColor&quot;: &quot;&quot;,
+&quot;sectionTheme&quot;: &quot;&quot;,
+&quot;sectionAnimation&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;image&quot;
+}"
+  data-current-context="{
+&quot;video&quot;: {
+&quot;playbackSpeed&quot;: 0.5,
+&quot;filter&quot;: 1,
+&quot;filterStrength&quot;: 0,
+&quot;zoom&quot;: 0,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageId&quot;: null,
+&quot;backgroundMediaEffect&quot;: null,
+&quot;typeName&quot;: &quot;page&quot;
+}"
+  data-animation="none"
+  
+   
+  
+    
+  
+  
+>
+  <div class="section-background">
+  
+    
+      
+      
+        
+            
+
+
+  
+<script>
+  "use strict";
+
+  var positionImage = function positionImage(imageEl) {
+    var imageDimensions = imageEl.dataset.imageDimensions.split('x');
+    var originalWidth = imageDimensions[0];
+    var originalHeight = imageDimensions[1];
+    var focalPoint = imageEl.dataset.imageFocalPoint.split(',');
+    var focalPointX = focalPoint[0];
+    var focalPointY = focalPoint[1];
+    var parentNode = imageEl.parentNode;
+
+    var scale = function () {
+      var imageRatio = originalWidth / originalHeight;
+      var parentClientSize = {
+        height: parentNode.clientHeight,
+        width: parentNode.clientWidth
+      };
+      var parentRatio = parentClientSize.width / parentClientSize.height;
+
+      if (imageRatio > parentRatio) {
+        return parentClientSize.height / originalHeight;
+      }
+
+      return parentClientSize.width / originalWidth;
+    }();
+
+    var getRelativeOffset = function getRelativeOffset() {
+      var targetWidth = Math.ceil(originalWidth * scale);
+      var targetHeight = Math.ceil(originalHeight * scale);
+      var parentDimensionWidth = parentNode.offsetWidth;
+      var parentDimensionHeight = parentNode.offsetHeight;
+      var overflowWidth = targetWidth - parentDimensionWidth;
+      var overflowHeight = targetHeight - parentDimensionHeight;
+      var valueX;
+
+      if (overflowWidth === 0) {
+        valueX = focalPointX;
+      } else {
+        valueX = Math.max(Math.min(targetWidth * focalPointX - parentDimensionWidth * 0.5, overflowWidth), 0) / overflowWidth;
+      }
+
+      var valueY;
+
+      if (overflowHeight === 0) {
+        valueY = focalPointY;
+      } else {
+        valueY = Math.max(Math.min(targetHeight * focalPointY - parentDimensionHeight * 0.5, overflowHeight), 0) / overflowHeight;
+      }
+
+      return {
+        valueX: valueX,
+        valueY: valueY
+      };
+    };
+
+    var relativeOffset = getRelativeOffset();
+    var valueX = relativeOffset.valueX;
+    var valueY = relativeOffset.valueY;
+    imageEl.style.objectPosition = "".concat(valueX * 100, "% ").concat(valueY * 100, "%");
+  };
+</script>
+
+
+
+{% comment %} imagenour header {% endcomment %}
+  <img alt=""
+    
+    data-src="https://storage.googleapis.com/api4ai-static/rapidapi/general-detection_1.png" data-image="https://storage.googleapis.com/api4ai-static/rapidapi/general-detection_1.png" data-image-dimensions="3000x1709" data-image-focal-point="0.6254364089775561,0.7360920115014377" alt="header.png" 
+    data-load="false"
+    
+       srcset="https://storage.googleapis.com/api4ai-static/rapidapi/general-detection_1.png?format=100w 100w,https://storage.googleapis.com/api4ai-static/rapidapi/general-detection_1.png?format=300w 300w,https://storage.googleapis.com/api4ai-static/rapidapi/general-detection_1.png?format=500w 500w,https://storage.googleapis.com/api4ai-static/rapidapi/general-detection_1.png?format=750w 750w,https://storage.googleapis.com/api4ai-static/rapidapi/general-detection_1.png?format=1000w 1000w,https://storage.googleapis.com/api4ai-static/rapidapi/general-detection_1.png?format=1500w 1500w,https://storage.googleapis.com/api4ai-static/rapidapi/general-detection_1.png?format=2500w 2500w"
+      
+      sizes="(max-width: 799px) 200vw, 100vw" 
+      onLoad="positionImage(this); this.classList.add('loaded');"
+      loading="lazy"
+    
+  />
+
+
+          
+      
+      <div class="section-background-overlay" style="opacity: 0;"></div>
+    
+  
+  </div>
+  <div
+    class="content-wrapper"
+    style='
+      
+        
+      
+    '
+  >
+    <div
+      class="content"
+      
+    >
+      
+      
+      
+      
+      
+      
+      <div class="sqs-layout sqs-grid-12 columns-12 empty" data-type="page-section" data-updated-on="1665654348383" id="page-section-61c5863fcd90480e9e7dcefc"></div>
+    </div>
+  </div>
+  
+</section>
+
+  
+    
+
+<section
+  data-test="page-section"
+  
+  data-section-theme="white"
+  class='page-section
+    
+      layout-engine-section
+    
+    background-width--full-bleed
+    
+      section-height--small
+    
+    
+      content-width--medium
+    
+    horizontal-alignment--center
+    vertical-alignment--middle
+    
+    
+    white'
+  
+  data-section-id="61c5863fcd90480e9e7dcefe"
+  
+  data-controller="SectionWrapperController"
+  data-current-styles="{
+&quot;imageOverlayOpacity&quot;: 0.15,
+&quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
+&quot;sectionHeight&quot;: &quot;section-height--small&quot;,
+&quot;customSectionHeight&quot;: 10,
+&quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
+&quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
+&quot;contentWidth&quot;: &quot;content-width--medium&quot;,
+&quot;customContentWidth&quot;: 50,
+&quot;backgroundColor&quot;: &quot;&quot;,
+&quot;sectionTheme&quot;: &quot;white&quot;,
+&quot;sectionAnimation&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;video&quot;,
+&quot;generative&quot;: {
+&quot;type&quot;: &quot;images&quot;,
+&quot;seed&quot;: 0,
+&quot;count&quot;: 0,
+&quot;size&quot;: 0,
+&quot;speed&quot;: 0,
+&quot;backgroundColor&quot;: {
+&quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+&quot;sitePaletteColor&quot;: {
+&quot;id&quot;: &quot;accent&quot;,
+&quot;alpha&quot;: 1.0
+}
+},
+&quot;invertColors&quot;: false,
+&quot;noiseIntensity&quot;: 0,
+&quot;noiseScale&quot;: 0,
+&quot;distortionScaleX&quot;: 0,
+&quot;distortionScaleY&quot;: 0,
+&quot;distortionSpeed&quot;: 0,
+&quot;distortionIntensity&quot;: 0,
+&quot;lightIntensity&quot;: 0,
+&quot;lightX&quot;: 0,
+&quot;bevelRotation&quot;: 0,
+&quot;bevelSize&quot;: 0,
+&quot;bevelStrength&quot;: 0,
+&quot;complexity&quot;: 0,
+&quot;cutoff&quot;: 0,
+&quot;isBevelEnabled&quot;: false,
+&quot;isBlurEnabled&quot;: false,
+&quot;scale&quot;: 0,
+&quot;speedMorph&quot;: 0,
+&quot;speedTravel&quot;: 0,
+&quot;steps&quot;: 0,
+&quot;travelDirection&quot;: 0,
+&quot;noiseBias&quot;: 0,
+&quot;animateNoise&quot;: false,
+&quot;distortionComplexity&quot;: 0,
+&quot;distortionDirection&quot;: 0,
+&quot;distortionMorphSpeed&quot;: 0,
+&quot;distortionSeed&quot;: 0,
+&quot;distortionSmoothness&quot;: 0,
+&quot;linearGradientStartColorDistance&quot;: 0,
+&quot;linearGradientEndColorDistance&quot;: 0,
+&quot;linearGradientAngle&quot;: 0,
+&quot;linearGradientAngleMotion&quot;: 0,
+&quot;linearGradientRepeat&quot;: 0,
+&quot;radialGradientRadius&quot;: 0,
+&quot;radialGradientPositionX&quot;: 0,
+&quot;radialGradientPositionY&quot;: 0,
+&quot;radialGradientFollowCursor&quot;: false,
+&quot;radialGradientFollowSpeed&quot;: 0,
+&quot;presetImageKey&quot;: &quot;brush2&quot;,
+&quot;imageTint&quot;: {
+&quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+&quot;sitePaletteColor&quot;: {
+&quot;id&quot;: &quot;lightAccent&quot;,
+&quot;alpha&quot;: 1.0
+}
+},
+&quot;imageScale&quot;: 50,
+&quot;imageCount&quot;: 29,
+&quot;patternEnabled&quot;: false,
+&quot;patternColor&quot;: {
+&quot;type&quot;: &quot;SITE_PALETTE_COLOR&quot;,
+&quot;sitePaletteColor&quot;: {
+&quot;id&quot;: &quot;black&quot;,
+&quot;alpha&quot;: 1.0
+}
+},
+&quot;patternSize&quot;: 16,
+&quot;patternImageKey&quot;: &quot;&quot;,
+&quot;patternOffsetX&quot;: 0,
+&quot;patternOffsetY&quot;: 0,
+&quot;patternSpaceX&quot;: 1,
+&quot;patternSpaceY&quot;: 1,
+&quot;waveEnabled&quot;: true,
+&quot;waveSpeed&quot;: 68,
+&quot;waveComplexity&quot;: 12,
+&quot;waveDepth&quot;: 24,
+&quot;waveShadowDepth&quot;: 0,
+&quot;boxSize&quot;: 0.0,
+&quot;scaleX&quot;: 0,
+&quot;scaleY&quot;: 0,
+&quot;scaleZ&quot;: 0,
+&quot;isMorphEnabled&quot;: false,
+&quot;lightY&quot;: 0,
+&quot;lightZ&quot;: 0,
+&quot;noiseRange&quot;: 0,
+&quot;positionFactor&quot;: 0,
+&quot;scaleFactor&quot;: 0,
+&quot;colorFactor&quot;: 0,
+&quot;sizeVariance&quot;: 0,
+&quot;wobble&quot;: 0,
+&quot;morph&quot;: 0,
+&quot;scrollMovement&quot;: 0,
+&quot;patternScaleX&quot;: 0,
+&quot;patternScaleY&quot;: 0,
+&quot;patternPowerX&quot;: 0,
+&quot;patternPowerY&quot;: 0,
+&quot;patternAmount&quot;: 0,
+&quot;surfaceHeight&quot;: 0,
+&quot;colorStop1&quot;: 0,
+&quot;colorStop2&quot;: 0,
+&quot;colorStop3&quot;: 0,
+&quot;colorStop4&quot;: 0,
+&quot;gradientDistortionX&quot;: 0,
+&quot;gradientDistortionY&quot;: 0,
+&quot;curveX&quot;: 0,
+&quot;curveY&quot;: 0,
+&quot;curveFunnel&quot;: 0,
+&quot;fogIntensity&quot;: 0,
+&quot;repeat&quot;: 0,
+&quot;rotation&quot;: 0,
+&quot;rotationSpeed&quot;: 0,
+&quot;blur&quot;: 0,
+&quot;complexityY&quot;: 0,
+&quot;complexityZ&quot;: 0,
+&quot;amplitudeY&quot;: 0,
+&quot;amplitudeZ&quot;: 0,
+&quot;offset&quot;: 0,
+&quot;lightAngle&quot;: 0,
+&quot;alpha&quot;: 0
+}
+}"
+  data-current-context="{
+&quot;video&quot;: {
+&quot;playbackSpeed&quot;: 0.5,
+&quot;filter&quot;: 1,
+&quot;filterStrength&quot;: 0,
+&quot;zoom&quot;: 0,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageId&quot;: null,
+&quot;backgroundMediaEffect&quot;: null,
+&quot;typeName&quot;: &quot;page&quot;
+}"
+  data-animation="none"
+  
+   
+  
+    
+  
+  
+>
+  <div class="section-background">
+  
+    
+      
+    
+  
+  </div>
+  <div
+    class="content-wrapper"
+    style='
+      
+        
+      
+    '
+  >
+    <div
+      class="content"
+      
+    >
+      
+      
+      
+      
+      
+      
+      <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-61c5863fcd90480e9e7dcefe"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-b9fa02cb46a1a14fa255"><div class="sqs-block-content">
+
+<p class="" style="white-space:pre-wrap;">&nbsp;</p><h1 style="text-align:center;white-space:pre-wrap;">Object Detection</h1><h4 style="text-align:center;white-space:pre-wrap;">Ready-to-go solution for multiple object detection and classification</h4>
+
+
+</div></div><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-aspect-ratio="2.0952380952380953" data-block-type="21" id="block-46d7cad9cf66b862a9f1"><div class="sqs-block-content">&nbsp;</div></div><div class="sqs-block horizontalrule-block sqs-block-horizontalrule" data-block-type="47" id="block-ce6a9ba404729e22eeca"><div class="sqs-block-content"><hr /></div></div></div></div></div>
+    </div>
+  </div>
+  
+</section>
+
+  
+    
+
+<section
+  data-test="page-section"
+  
+  data-section-theme=""
+  class='page-section
+    
+      layout-engine-section
+    
+    background-width--full-bleed
+    
+      section-height--small
+    
+    
+      content-width--wide
+    
+    horizontal-alignment--center
+    vertical-alignment--middle
+    
+      
+    
+    
+    '
+  
+  data-section-id="61c5863fcd90480e9e7dcf00"
+  
+  data-controller="SectionWrapperController"
+  data-current-styles="{
+&quot;imageOverlayOpacity&quot;: 0.15,
+&quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
+&quot;sectionHeight&quot;: &quot;section-height--small&quot;,
+&quot;customSectionHeight&quot;: 10,
+&quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
+&quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
+&quot;contentWidth&quot;: &quot;content-width--wide&quot;,
+&quot;customContentWidth&quot;: 50,
+&quot;backgroundColor&quot;: &quot;&quot;,
+&quot;sectionTheme&quot;: &quot;&quot;,
+&quot;sectionAnimation&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;image&quot;
+}"
+  data-current-context="{
+&quot;video&quot;: {
+&quot;playbackSpeed&quot;: 0.5,
+&quot;filter&quot;: 1,
+&quot;filterStrength&quot;: 0,
+&quot;zoom&quot;: 0,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageId&quot;: null,
+&quot;backgroundMediaEffect&quot;: null,
+&quot;typeName&quot;: &quot;page&quot;
+}"
+  data-animation="none"
+  
+   
+  
+    
+  
+  
+>
+  <div class="section-background">
+  
+    
+  
+  </div>
+  <div
+    class="content-wrapper"
+    style='
+      
+        
+      
+    '
+  >
+    <div
+      class="content"
+      
+    >
+      
+      
+      
+      
+      
+      
+      <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-61c5863fcd90480e9e7dcf00"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-5fcca40f54e7b0e9c604"><div class="sqs-block-content">
+
+<h2 style="text-align:center;white-space:pre-wrap;">&nbsp;About</h2><p style="text-align:center;white-space:pre-wrap;" class="sqsrte-large">This solution provides image analysis and detection of objects of various kinds.</p>
+
+
+</div></div><div class="row sqs-row"><div class="col sqs-col-6 span-6"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-4f500eb96870f79dbfb2"><div class="sqs-block-content"><div class="api-about-icon-wrapper">
+  <img class="api-about-icon" loading="lazy" src="https://cvisionlab.com/wp-content/themes/cvisionlab/images/editor/cases/object-detection/icon-detection.png" height="142">
+</div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-afe7beafc75a4a488012"><div class="sqs-block-content">
+
+<h3 style="text-align:center;white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: #3C3C3B">Detection</span></h3><p style="text-align:center;white-space:pre-wrap;" class="">The algorithm detects multiple objects in an image and gives coordinates to draw a bounding box around each object.</p>
+
+
+</div></div></div><div class="col sqs-col-6 span-6"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-f44a22878e6322cc1c6f"><div class="sqs-block-content"><div class="api-about-icon-wrapper">
+  <img class="api-about-icon" loading="lazy" src="https://cvisionlab.com/wp-content/themes/cvisionlab/images/editor/cases/object-detection/icon-classification.png" height="142">
+</div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-9376920ef867bfdc90e4"><div class="sqs-block-content">
+
+<h3 style="text-align:center;white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: #3C3C3B">Classification</span></h3><p style="text-align:center;white-space:pre-wrap;" class="">The algorithm suggests the most probable class along with its confidence level for each object.</p>
+
+
+</div></div></div></div></div></div></div>
+    </div>
+  </div>
+  
+</section>
+
+  
+    
+
+
+</section>
+
+  
+    
+
+<section
+  data-test="page-section"
+  
+  data-section-theme=""
+  class='page-section
+    
+      layout-engine-section
+    
+    background-width--full-bleed
+    
+      section-height--medium
+    
+    
+      content-width--wide
+    
+    horizontal-alignment--center
+    vertical-alignment--middle
+    
+      
+    
+    
+    '
+  
+  data-section-id="61c5863fcd90480e9e7dcf04"
+  
+  data-controller="SectionWrapperController"
+  data-current-styles="{
+&quot;imageOverlayOpacity&quot;: 0.15,
+&quot;backgroundWidth&quot;: &quot;background-width--full-bleed&quot;,
+&quot;sectionHeight&quot;: &quot;section-height--medium&quot;,
+&quot;customSectionHeight&quot;: 10,
+&quot;horizontalAlignment&quot;: &quot;horizontal-alignment--center&quot;,
+&quot;verticalAlignment&quot;: &quot;vertical-alignment--middle&quot;,
+&quot;contentWidth&quot;: &quot;content-width--wide&quot;,
+&quot;customContentWidth&quot;: 50,
+&quot;backgroundColor&quot;: &quot;&quot;,
+&quot;sectionTheme&quot;: &quot;&quot;,
+&quot;sectionAnimation&quot;: &quot;none&quot;,
+&quot;backgroundMode&quot;: &quot;image&quot;
+}"
+  data-current-context="{
+&quot;video&quot;: {
+&quot;playbackSpeed&quot;: 0.5,
+&quot;filter&quot;: 1,
+&quot;filterStrength&quot;: 0,
+&quot;zoom&quot;: 0,
+&quot;videoSourceProvider&quot;: &quot;none&quot;
+},
+&quot;backgroundImageId&quot;: null,
+&quot;backgroundMediaEffect&quot;: null,
+&quot;typeName&quot;: &quot;page&quot;
+}"
+  data-animation="none"
+  
+   
+  
+    
+  
+  
+>
+
+    <div
+      class="content"
+      
+    >
+      
+      
+      
+      
+      
+      
+      <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-61c5863fcd90480e9e7dcf04"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-647afd8711d9e2a70626"><div class="sqs-block-content">
+
+<h2 style="text-align:center;white-space:pre-wrap;">&nbsp;Benefits</h2><p style="text-align:center;white-space:pre-wrap;" class="sqsrte-large">Object Detection from <strong>api</strong><span class="sqsrte-text-color--accent"><strong>4</strong></span><strong>ai</strong> is born from the best machine learning practices, thorough testing and mature integration processes.</p>
+
+
+</div></div><div class="row sqs-row"><div class="col sqs-col-3 span-3"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-b33735d91035402e918d"><div class="sqs-block-content"><div class="api-about-icon-wrapper">
+  <img class="api-about-icon" loading="lazy" src="https://cvisionlab.com/wp-content/themes/cvisionlab/images/editor/cases/face-analysis/icon-off-the-shelf-solution.svg" width="104" height="127">
+</div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-8edecd0102349a50f1cb"><div class="sqs-block-content">
+
+<h3 style="text-align:center;white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: #3C3C3B">Off-the-shelf<br>solution</span></h3><p style="text-align:center;white-space:pre-wrap;" class="">The service is developed, tested and ready to go.</p>
+
+
+</div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-551c19ed7612af97eba5"><div class="sqs-block-content"><div class="api-about-icon-wrapper">
+  <img class="api-about-icon" loading="lazy" src="https://cvisionlab.com/wp-content/themes/cvisionlab/images/editor/cases/face-analysis/icon-cloud-service.svg" width="104" height="127">
+</div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-163bfa85dcfde7577a29"><div class="sqs-block-content">
+
+<h3 style="text-align:center;white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: #3C3C3B">Cloud<br>service</span></h3><p style="text-align:center;white-space:pre-wrap;" class="">This is a completely cloud-based solution which provides high reliability and uptime.</p>
+
+
+</div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-4959a332f0e0e7c56dff"><div class="sqs-block-content"><div class="api-about-icon-wrapper">
+  <img class="api-about-icon" loading="lazy" src="https://cvisionlab.com/wp-content/themes/cvisionlab/images/editor/cases/face-analysis/icon-wide-apply.svg" height="127">
+</div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-0a865a7bb1896c25a38d"><div class="sqs-block-content">
+
+<h3 style="text-align:center;white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: #3C3C3B">Wide<br>applicability</span></h3><p style="text-align:center;white-space:pre-wrap;" class="">The solution includes a number of options to fit different business goals.</p>
+
+
+</div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-f11dad085f48603f2f8b"><div class="sqs-block-content"><div class="api-about-icon-wrapper">
+  <img class="api-about-icon" loading="lazy" src="https://cvisionlab.com/wp-content/themes/cvisionlab/images/editor/cases/face-analysis/icon-robust.svg" width="104" height="127">
+</div></div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-3f6578cdfb7273f4ea78"><div class="sqs-block-content">
+
+<h3 style="text-align:center;white-space:pre-wrap;"><span class="sqsrte-text-color--custom" style="color: #3C3C3B">Robust<br>algorithm</span></h3><p style="text-align:center;white-space:pre-wrap;" class="">Resilient to lighting conditions, rotation, small distortions.</p>
+
+
+</div></div></div></div></div></div></div>
+    </div>
+  </div>
+  
+</section>
+
+  
+    
+
+
+  <div class="section-background">
+  
+    
+  
+  </div>
+  <div
+    class="content-wrapper"
+    style='
+      
+        
+      
+    '
+  >
+    <div
+      class="content"
+      
+    >
+      
+      
+      
+      
+      
+      
+      <div class="sqs-layout sqs-grid-12 columns-12" data-type="page-section" id="page-section-61c5863fcd90480e9e7dcf08"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-47d118bf152ba2a2cb05"><div class="sqs-block-content">
+
+<h2 style="text-align:center;white-space:pre-wrap;">&nbsp;Get started</h2>
+
+
+</div></div><div class="row sqs-row"><div class="col sqs-col-4 span-4"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-49bea5046019bb3d41ae"><div class="sqs-block-content"><div class="api-getstarted-button-wrapper">
+  <a href="https://rapidapi.com/api4ai-api4ai-default/api/general-detection/details" target="_blank">
+    <svg width="100" height="100" id="eRaZip198Vj1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" width="64" height="64"><path id="eRaZip198Vj2" d="M31.999,0.381C49.463,0.38,63.62,14.537,63.62,32C63.62,49.463,49.464,63.62,32,63.62C14.536,63.62,0.38,49.463,0.38,32C0.38,14.537,14.536,0.38,32,0.38L31.999,0.381ZM55.263,46.012C56.03447,46.02783,56.75249,45.61929,57.133,44.948C57.515,44.276,57.49,43.452,57.093,42.796C56.69216,42.13897,55.96127,41.75699,55.193,41.803L53.093,41.703L48.381,41.303C47.133,41.095,46.205,40.018,46.181,38.745L45.911,24.205C45.776,16.446,39.37,10.283,31.611,10.418C23.852,10.553,17.68,16.96,17.824,24.718L18.094,39.261C18.117,40.535,17.229,41.643,15.982,41.899L11.289,42.483L9.192,42.653C8.061,42.717,7.184,43.663,7.205,44.795C7.226,45.927,8.137,46.84,9.269,46.862L11.373,46.97L17.673,47.243C18.35768,47.23267,19.01133,46.95571,19.495,46.471L21.691,44.188L23.871,41.988C24.133,41.748,24.481,41.626,24.835,41.646C25.472,41.677,26.01,42.178,26.072,42.824C26.10093,43.14273,26.01898,43.46168,25.84,43.727L22.04,48.6L20.669,50.182C20.11552,50.71797,19.89817,51.513,20.102,52.256C20.306,53.008,20.9,53.58,21.65,53.756C22.4,53.932,23.186,53.686,23.7,53.112L25.262,51.712L31.367,46.105C31.8549,45.62673,32.63109,45.61183,33.137,46.071L39.445,51.449L41.058,52.799C41.59462,53.34504,42.38587,53.55579,43.123,53.349C43.86,53.142,44.428,52.552,44.606,51.809C44.78306,51.06487,44.54355,50.28319,43.98,49.766L42.56,48.216L38.567,43.442C38.391,43.195,38.307,42.894,38.327,42.592C38.365,41.945,38.873,41.423,39.519,41.368C39.87271,41.33468,40.22492,41.44536,40.496,41.675L42.754,43.795L45.034,45.992C45.535,46.458,46.198,46.71,46.882,46.696L53.182,46.196L55.263,46.012Z" fill="rgb(29,67,113)" fill-rule="evenodd" stroke="none" stroke-width="1"/><path id="eRaZip198Vj3" d="M41.553,23.552L36.445,20.252C35.535,19.705,34.473,20.444,34.489,21.508C34.497,22.078,34.789,22.445,35.249,22.738L38.042,24.556L35.062,26.351C34.379,26.787,34.227,27.565,34.622,28.226C34.992,28.846,35.77,29.108,36.427,28.733L41.477,25.733C42.277,25.223,42.333,24.09,41.553,23.553M28.373,26.193L25.627,24.555L28.341,22.792C29.233,22.208,29.461,21.422,28.967,20.692C28.493,19.996,27.701,19.905,26.834,20.464L22.474,23.286C21.26,24.079,21.282,25.206,22.531,25.954L26.939,28.561C27.809,29.061,28.622,28.937,29.053,28.225C29.489,27.505,29.228,26.709,28.373,26.191" fill="rgb(29,67,113)" fill-rule="evenodd" stroke="none" stroke-width="1"/></svg>
+    <h4>Subscribe to API</h4>
+  </a>
+
+</div></div></div></div><div class="col sqs-col-4 span-4"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-19e93d227d91e908c7c0"><div class="sqs-block-content"><div class="api-getstarted-button-wrapper">
+  <a href="/docs/object-detection" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"><path fill="#83b256" d="M4 22v-20h16v11.543c0 4.107-6 2.457-6 2.457s1.518 6-2.638 6h-7.362zm18-7.614v-14.386h-20v24h10.189c3.163 0 9.811-7.223 9.811-9.614zm-5-1.386h-10v-1h10v1zm0-4h-10v1h10v-1zm0-3h-10v1h10v-1z"/></svg>
+    <h4>API docs</h4>
+  </a>
+
+</div></div></div></div><div class="col sqs-col-4 span-4"><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1651073648850_7876"><div class="api-getstarted-button-wrapper"><div class="api-getstarted-button-wrapper">
+  <a href="/apis" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="#3b3b3b"><path d="M13 8h-8v-1h8v1zm0 2h-8v-1h8v1zm-3 2h-5v-1h5v1zm11.172 12l-7.387-7.387c-1.388.874-3.024 1.387-4.785 1.387-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9c0 1.761-.514 3.398-1.387 4.785l7.387 7.387-2.828 2.828zm-12.172-8c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z"/></svg>
+    <h4>Browse APIs</h4>
+  </a>
+</div></div></div></div></div></div></div></div>
+    </div>
+  </div>
+  
+</section>
+
+  
+</article>
+
+          
+            
+              
+            
+          
+        
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-hidden
+          design-layout-inline
+          combination-animation-none
+          individual-animation-site-default
+          individual-text-animation-site-default
+        "
+        data-test="image-block-inline-outer-wrapper"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:1359px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:28.918323516845703%;
+                
+                overflow: hidden;
+              "
+              >
+
+            
+              <noscript><img src="https://www.alse.fr/sites/alse.fr/local/cache-vignettes/L400xH350/deeplearning-fbdab.jpg?1573310057" alt="" /></noscript><img class="thumb-image" data-src="https://www.alse.fr/sites/alse.fr/local/cache-vignettes/L400xH350/deeplearning-fbdab.jpg?1573310057" data-image-dimensions="1359x393" data-image-focal-point="0.5,0.5" alt="" data-load="false" data-image-id="61bcc0c8df19ae1e6018686b" data-type="image" />
+            </div>
+          </div>
+        
+         {% comment %} le logo da la page {% endcomment %}
+
+        
+
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+
+
+</section>
+
+  
+
+
+  </body>
+</html>
+
+
+
+
+
+{% endblock %}
 
 {% block extra_css %}
 
 {% comment %}
 Delete the line below if you're just getting started and want to remove the welcome screen!
 {% endcomment %}
-<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+{% comment %} <link rel="stylesheet" href="{% static 'css/welcome_page.css' %}"> {% endcomment %}
 {% endblock extra_css %}
 
-{% block content %}
-
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
-{% include 'home/welcome_page.html' %}
-
-{% endblock content %}
